@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background-color:rgb(207, 204, 222);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;
+}
+#header{
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgb(207, 204, 222);
+}
+.imagen-div{
+  width:60vw;
+}
+#header-img{
+     width: 100%;
+    height: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+}
+#nav-bar ul {
+        width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#nav-bar ul li{
+  list-style:none;
+}
+
+#nav-bar  li a{
+ text-decoration:none;
+ color:rgb(27,26, 26);
+ font-size: 1.8rem;
+}
+main{
+  margin-top: 9.5rem ;
+  text-align: center;
+  z-index: -1;
+  
+}
+main > h2{
+  font-size: 2rem;
+  font-family: Georgia, 'Times New Roman';
+  font-weight: lighter;
+  text-transform: uppercase;
+  margin-top: 11rem;
+  line-height: 1.8;
+}
+#form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+#form #email{
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 0.1rem solid rgb(151, 146, 146)
+}
+#form #submit{
+  padding: 0.4rem 3rem;
+  background-color: gold;
+  border: none;
+}
+.container #features{
+  margin: 2rem ;
+  display: block;
+  text-align: left;
+  
+}
+.grid{
+ display: block;
+ margin: 2rem;
+
+}
+.iconos{
+    position: absolute;
+    width: 3vw;
+    min-width: 3rem;
+    min-height: 3.5rem;
+    height: 4vh;
+    margin: 0.1rem 0 ;
+    z-index: -2;
+}
+.grid h2{
+  font-size: 2rem;
+  margin:  0 0 0 12rem;
+  display:inline;
+  
+}
+.grid p{
+  font-size: 1.4rem;
+  margin-left: 12rem;
+  margin-top: 1rem;
+}
+#video{
+ width: 60vw;
+ max-width: 60rem;
+ min-width: 30rem;
+ max-height: 45rem;
+ min-height: 17rem;
+ height: 55vh;
+
+}
+#pricing{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 8rem;
+}
+.trombon{
+  width: 33vw;
+  max-width: 35rem;
+  min-width: 25rem;
+  height: 34rem;
+  border: 1px solid;
+  margin: 2rem
+}
+.trombon > h2{
+  font-size: 2.5rem;
+  font-weight: lighter;
+  background-color: rgb(176, 180, 180);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+.trombon h2:nth-last-child(2){
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+.trombon ul{
+  list-style:none;
+  font-size: 1.6rem;
+  line-height: 2;
+  margin-bottom: 0.5rem;
+}
+button{
+  margin-top: -0.4rem;
+  padding: 1rem 1.5rem;
+  background-color: gold;
+  border: none;
+}
+footer{
+  background-color: rgb(176, 180, 180);
+  width: 100vw;
+  height: 10rem;
+}
+footer ul{
+  display: flex;
+  justify-content: flex-end;
+  
+}
+ footer ul li{
+   padding: 0 1rem;
+   font-size: 1.6rem;
+   list-style: none;
+ }
+footer p{
+  font-size: 1.4rem;
+  text-align: right;
+  margin: 1rem 5.5rem 0 0
+}
+footer li a{
+  text-decoration: none;
+  color: black;
+}
+@media(max-width:768px){
+   #header{
+    display: grid;
+    width: 90%;
+    margin-top: 0rem;
+   }
+    #nav-bar ul{
+    margin-left: 9rem;
+}
+
+} 
+@media(max-width:425px){
+   #header{
+    display: grid;
+    width: 90%;
+    margin-top: 0rem;
+   }
+    #nav-bar ul{
+    margin-left: 9rem;
+}
+
+} 
+@media(max-width:320px){
+    .grid h2{
+        font-size: 1.6rem;
+    }
+    .grid p{
+        font-size: 1.3rem;
+    }
+}
